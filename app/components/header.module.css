@@ -1,0 +1,38 @@
+.main{
+    top: 0;
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+   
+    background-image: url("../../public/bg1.jpeg");   
+    
+}
+.container{
+    margin-top: 25vh;
+    margin-inline: 5vw;
+    padding: 1vw;
+    width: fit-content; 
+    border-radius: 1vw; 
+    background: linear-gradient(120deg, rgba(0,0,0, 0.1), rgba(0,0,0, 0))
+}
+.header{
+    font-weight: 100;
+    color: white;
+
+}
+.paragraph{
+    font-weight: 350;
+    color: white;
+}
+.button{
+    background-color: #1c69d4;
+    color: white;
+    padding-inline: 3vw;
+    border: none;
+    padding-block: 1vh;
+    
+}
+.button:hover{
+    cursor: pointer;
+    transform: translate(0px , -1px)
+}

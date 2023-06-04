@@ -1,0 +1,59 @@
+.main{
+    position: fixed;
+    scroll-behavior: smooth;;
+    top: 0;
+    right: 0;
+    left : 0;
+    display: flex;
+    padding-inline: 3vw;
+    padding-block: 1vw;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.7), rgba(0,0,0, 0));
+    z-index: 2;
+    gap: 3vw;
+    font-weight: 650;
+    color: white;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.text:hover{
+    cursor: pointer;
+}
+.searchIcon{
+    position: absolute;
+    right: 3vw; 
+    background-color: white;
+    border-radius: 100vh;
+    padding-inline:10px;
+    padding-block:1vh;
+    color: white;
+}
+.searchIcon:hover{
+    cursor:pointer
+}
+.searchBox{
+    position: absolute;
+    right: 3vw;
+    padding: 10px;
+    background-color: white;
+    border-radius: 1vw; 
+    margin-top:9vh;
+    display:flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    animation: searchPopUp;
+    animation-duration: 1s;
+}
+.secSearchIcon:hover{
+    cursor: pointer; 
+}
+@keyframes searchPopUp {
+    0%{
+        margin-top: 1vh;
+        opacity: 0; 
+    } 
+    100%{
+        margin-top:9vh;
+        opacity: 1; 
+    }
+}
