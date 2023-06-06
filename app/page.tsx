@@ -3,6 +3,7 @@ import styles from './page.module.css'
 import Navbar from './components/navbar'
 import Header from './components/header'
 import Cars from './components/cars'
+import Announcements from './components/announcements'
 
 export default function Home() {
   return (
@@ -10,6 +11,7 @@ export default function Home() {
       <Navbar /> 
       <Header />
       <Cars />
+      <Announcements />
     </div>
   )
 }

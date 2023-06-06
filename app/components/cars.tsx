@@ -4,14 +4,15 @@ import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Cars() {
-    document.addEventListener('scroll', () => {
-        console.log(window.scrollY)
+    document.addEventListener('scroll', () => {  
         if(window.scrollY > 200){
             setRender(true);
         }
     })
     const [car, setCar] = useState<string>("ix")
+    
     const [render, setRender] = useState<boolean>(false)
+
     return (
         <div className={styles.main}>
             { render &&

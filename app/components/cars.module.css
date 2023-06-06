@@ -1,6 +1,7 @@
 .main{
     margin-top:100vh;
     width: 100vw;
+    margin-bottom: 50vh;
 }
 .container{
     max-height:75vh;
@@ -35,11 +36,11 @@
     transform: scale(1.1, 1.1)
 }
 .imageContainer{
-    height: 100vh; 
     border-radius: 5vw;
-    
-   display: flex;
-   justify-content: center;
+    animation: fadeIn; 
+    animation-duration: 1s;
+    display: flex;
+    justify-content: center;
 }
 @keyframes fadeIn {
     0%{

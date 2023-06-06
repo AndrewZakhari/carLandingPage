@@ -6,9 +6,11 @@ import { useState } from 'react'
 
 
 export default function Nav() {
+    const [scroll, setScroll] = useState<number>(0);
+    
     const [search , setSearch] = useState<boolean>(false);
     return (
-        <div className={styles.main}>
+        <div className={styles.Navmain}>
            <Link scroll={false} href="/"><Image alt="" className={styles.logo} src="/../public/bmw1.png" width="50" height="50"/></Link>
             <p className={styles.text}>Models</p>
             <p className={styles.text}>Build Your Own</p>
