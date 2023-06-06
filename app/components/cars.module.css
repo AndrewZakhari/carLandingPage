@@ -36,11 +36,13 @@
     transform: scale(1.1, 1.1)
 }
 .imageContainer{
-    border-radius: 5vw;
+    box-shadow: 0 0 0 100vmax #121212;
+    width:100vw;
+    clip-path: inset(0 -100vmax);
     animation: fadeIn; 
     animation-duration: 1s;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
 }
 @keyframes fadeIn {
     0%{

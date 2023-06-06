@@ -6,11 +6,20 @@ import { useState } from 'react'
 
 
 export default function Nav() {
+    document.addEventListener('scroll', () => {
+        if(window.scrollY > 400){
+            
+            setUpdateNav(true);
+        }
+    })
+    const [updateNav, setUpdateNav] = useState<boolean>(false);
     const [scroll, setScroll] = useState<number>(0);
-    
     const [search , setSearch] = useState<boolean>(false);
+    
     return (
-        <div className={styles.Navmain}>
+        <>
+        {updateNav &&
+             <div id="navbar" className={styles.NavmainBlack}>
            <Link scroll={false} href="/"><Image alt="" className={styles.logo} src="/../public/bmw1.png" width="50" height="50"/></Link>
             <p className={styles.text}>Models</p>
             <p className={styles.text}>Build Your Own</p>
@@ -24,5 +33,23 @@ export default function Nav() {
                     </div>
             }
         </div>
+        }
+        { !updateNav &&
+        <div id="navbar" className={styles.Navmain}>
+           <Link scroll={false} href="/"><Image alt="" className={styles.logo} src="/../public/bmw1.png" width="50" height="50"/></Link>
+            <p className={styles.text}>Models</p>
+            <p className={styles.text}>Build Your Own</p>
+            <p className={styles.text}>Shopping &darr;</p>
+            <p className={styles.text}>BMW Electric</p>
+            <p className={styles.text}>Owners &darr;</p>
+            <Image alt="" onClick={ () => setSearch(!search)} className={styles.searchIcon} src='/../public/search1.png' width="30" height="30" />
+            {search &&
+                <div className={styles.searchBox}><input style={{border: "none"}} placeholder='Search' type='text' /> 
+                <Image className={styles.secSearchIcon} alt="" src='/../public/search1.png' width="15" height="15" />
+                    </div>
+            }
+        </div>
+}
+        </>
     )
 }

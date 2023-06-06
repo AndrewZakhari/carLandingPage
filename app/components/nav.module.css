@@ -12,6 +12,23 @@
     gap: 3vw;
     font-weight: 650;
     color: white;
+ 
+}
+.NavmainBlack{
+     position: fixed;
+    scroll-behavior: smooth;;
+    top: 0;
+    right: 0;
+    left : 0;
+    display: flex;
+    padding-inline: 3vw;
+    background: white;
+    z-index: 2;
+    gap: 3vw;
+    font-weight: 650;
+    color: black;
+    animation: navAnime;
+    animation-duration: 1s;
 }
 .logo:hover{
     cursor: pointer;
@@ -55,5 +72,13 @@
     100%{
         margin-top:9vh;
         opacity: 1; 
+    }
+}
+@keyframes navAnime{
+    0%{
+        padding-block: 1.5vh;
+    }
+    100%{
+        padding-block: 0;
     }
 }

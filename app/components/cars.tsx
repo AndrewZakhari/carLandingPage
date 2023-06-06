@@ -37,7 +37,7 @@ export default function Cars() {
             </div>
             { car === "ix" &&
                 <div className={styles.imageContainer}>
-                <Image draggable="false" src='/../public/bmw-ix-big.jpg' alt="" width="1660" height='756'/>
+                <Image draggable="false" src='/../public/bmw-ix-big.jpg' alt="" width="1660" height="756"/>
                 </div>
             }
             {car === 'i7' &&
@@ -47,13 +47,13 @@ export default function Cars() {
 
             } {car === 'i4' &&
             <div className={styles.imageContainer}>
-                <Image src="/../public/bmw-i4-big.jpg" alt="" width="1660" height ="756" />
+                <Image draggable="false" src="/../public/bmw-i4-big.jpg" alt="" width="1660" height ="756" />
             </div>
 
             }
              {car === 'ix1' &&
             <div className={styles.imageContainer}>
-                <Image src="/../public/bmw-ix1-big.jpg" alt="" width="1660" height ="756" />
+                <Image draggable="false" src="/../public/bmw-ix1-big.jpg" alt="" width="1660" height ="756" />
             </div>
 
             }
