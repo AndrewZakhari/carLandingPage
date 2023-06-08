@@ -1,7 +1,7 @@
 .main{
     margin-top:100vh;
     width: 100vw;
-    margin-bottom: 50vh;
+    margin-bottom: 60vh;
 }
 .container{
     max-height:75vh;
@@ -10,6 +10,9 @@
     gap: 30px;
     animation: fadeIn;
     animation-duration: 2s;
+}
+.header{
+    text-align: center;
 }
 .previewContainer{
     display: flex;

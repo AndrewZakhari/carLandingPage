@@ -16,7 +16,9 @@ export default function Cars() {
     return (
         <div className={styles.main}>
             { render &&
+        
             <div className={styles.container}>
+                <h1 className={styles.header}>Our Electric Collection</h1>
             <div className={styles.previewContainer}>
             <div onClick={() => setCar("ix")} className={styles.carContainer}>
             <p className={styles.carModel}>BNW IX</p>

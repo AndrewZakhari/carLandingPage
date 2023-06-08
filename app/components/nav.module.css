@@ -12,9 +12,11 @@
     gap: 3vw;
     font-weight: 650;
     color: white;
- 
+    animation: navAnime;
+    animation-duration: 1s;
+    animation-direction: reverse;
 }
-.NavmainBlack{
+.NavmainWhite{
      position: fixed;
     scroll-behavior: smooth;;
     top: 0;
@@ -30,8 +32,53 @@
     animation: navAnime;
     animation-duration: 1s;
 }
+.closedNavMobile{
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    padding-left: 2vw;
+    padding-block: 1vh;
+    z-index: 2;
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+}
+.openedNavMobile{
+    width: 100vw;
+    top:0;
+    position: absolute;
+    padding-left: 2vw;
+    padding-block: 1vh;
+    z-index:2;
+    background: white;
+    transition: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-in-out;
+    
+}
+.container{
+    display:flex;
+    flex-direction:column;
+    background: white;
+    align-items:center;
+    animation: openNav;
+    animation-duration: 0.5s; 
+}
 .logo:hover{
     cursor: pointer;
+    animation: rotate;
+    animation-duration: 1s;
+    transform: rotate(360deg);
+}
+.textMob{
+    border-bottom:1px solid grey;
+    padding-block: 1vh;
+}
+
+.openLogo{
+    animation:rotate;
+    animation-duration: 1s;
+    transform: rotate(360deg);
 }
 .text:hover{
     cursor: pointer;
@@ -54,7 +101,7 @@
     padding: 10px;
     background-color: white;
     border-radius: 1vw; 
-    margin-top:9vh;
+    margin-top:7vh;
     display:flex;
     flex-wrap: nowrap;
     align-items: center;
@@ -70,7 +117,7 @@
         opacity: 0; 
     } 
     100%{
-        margin-top:9vh;
+        margin-top:7vh;
         opacity: 1; 
     }
 }
@@ -80,5 +127,27 @@
     }
     100%{
         padding-block: 0;
+    }
+}
+@keyframes openNav {
+    0%{
+        position: absolute;
+        right: 100vw;
+        width: 100vw;
+        height: max-content;
+    }
+    100%{
+        position: absolute;
+        right: 0vw;
+        width: 100vw;
+        height:max-content;
+    }
+}
+@keyframes rotate {
+    0%{
+        transform: none;
+    }
+    100%{
+        tranform: rotate(360deg);
     }
 }

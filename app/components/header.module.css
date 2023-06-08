@@ -3,7 +3,8 @@
     width: 100vw;
     position: absolute;
     height: 100vh;
-   
+  
+
     background-image: url("../../public/bg1.jpeg");   
     background-attachment: fixed;
     
@@ -18,7 +19,7 @@
    
 }
 .header{
-    font-weight: 100;
+    font-weight: 250;
     color: white;
 
 }

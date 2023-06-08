@@ -4,6 +4,7 @@ import Navbar from './components/navbar'
 import Header from './components/header'
 import Cars from './components/cars'
 import Announcements from './components/announcements'
+import Ownership from './components/ownership'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <Cars />
       <Announcements />
+      <Ownership />
     </div>
   )
 }
