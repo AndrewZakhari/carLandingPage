@@ -1,0 +1,28 @@
+.header{
+    text-align: center;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3.5vw;
+}
+.preview{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.paragraph{
+    font-weight: 250;
+    display:flex;
+    text-align: center;
+}
+.link{
+    border-bottom: 2px solid black;
+    font-weight: 500;
+}
+.link:hover{
+    cursor: pointer;
+}

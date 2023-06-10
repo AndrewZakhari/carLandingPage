@@ -1,0 +1,36 @@
+.main{
+    background-image: url('../../public/bg2.jpg');
+   background-attachment:fixed;
+    background-size:cover;
+    background-position: 60% 100%;
+    width: 100vw;
+    height: 100vh;
+    
+}
+
+.container{
+    background: linear-gradient(to right, rgba(0,0,0,0.1), rgba(0,0,0,0));
+    width: fit-content;
+    padding: 2vw;
+    margin-inline: 5vw;
+    margin-block: 25vh;
+    border-radius: 1vw;
+}
+.header{
+    font-weight: 250;
+    color: white;
+}
+.paragraph{
+    font-weight: 350;
+    color: white;
+}
+.button{
+    background-color: #1c69d4;
+    color: white;
+    padding-inline: 3vw;
+    border: none;
+    padding-block: 1vh;    
+}
+.button:hover{
+    cursor: pointer;
+}

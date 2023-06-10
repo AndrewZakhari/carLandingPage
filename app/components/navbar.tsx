@@ -8,10 +8,10 @@ import { useState } from 'react'
 export default function Nav() {
     
     document.addEventListener('scroll', () => {
-        if(window.scrollY > 1000){ 
+        if(window.scrollY > 900){ 
             setUpdateNav(true);
         }
-        if(window.scrollY < 1000){
+        if(window.scrollY < 900){
             setUpdateNav(false);
         }
     })

@@ -4,7 +4,7 @@
     position: absolute;
     height: 100vh;
   
-
+    background-position: 45% 100%;
     background-image: url("../../public/bg1.jpeg");   
     background-attachment: fixed;
     
