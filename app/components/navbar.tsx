@@ -2,11 +2,12 @@
 import Link from 'next/link'
 import styles from './nav.module.css'
 import Image from 'next/image'
+import { useEffect } from 'react'
 import { useState } from 'react'
 
 
 export default function Nav() {
-    
+    useEffect( () => {
     document.addEventListener('scroll', () => {
         if(window.scrollY > 900){ 
             setUpdateNav(true);
@@ -14,12 +15,15 @@ export default function Nav() {
         if(window.scrollY < 900){
             setUpdateNav(false);
         }
+    })}, [])
+    useEffect(() => {
+        const isMobile = window.innerWidth < 850;
+        setIsMobile(isMobile)
     })
     const [updateNav, setUpdateNav] = useState<boolean>(false);
     const [search , setSearch] = useState<boolean>(false);
     const [open, setOpen] = useState<boolean>(false);
-    const isMobile = window.innerWidth < 850 
-
+    const [isMobile, setIsMobile] = useState<boolean>(false);
 
     return (
         <>

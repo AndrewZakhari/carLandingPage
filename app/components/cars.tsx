@@ -1,16 +1,22 @@
 'use client'
 import styles from './cars.module.css'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import { useState } from 'react'
 
 export default function Cars() {
+    useEffect( () => {
     document.addEventListener('scroll', () => {  
         if(window.scrollY > 200){
             setRender(true);
         }
-    })
+    })}, [])
+    useEffect( () => {
+       const isMobile = window.innerWidth < 850
+       setIsMobile(isMobile)
+    }) 
     const [car, setCar] = useState<string>("ix")
-   const isMobile = window.innerWidth < 850 ;
+    const [isMobile, setIsMobile]  = useState<boolean>(false)
     const [render, setRender] = useState<boolean>(false)
 
     return (
