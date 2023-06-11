@@ -14,9 +14,11 @@ export default function Cars() {
     const [render, setRender] = useState<boolean>(false)
 
     return (
+        <>
+        {!isMobile &&
         <div className={styles.main}>
             { render &&
-   <> {!isMobile &&
+   
             <div className={styles.container}>
                 <h1 className={styles.header}>Our Electric Collection</h1>
             <div className={styles.previewContainer}>
@@ -61,8 +63,12 @@ export default function Cars() {
             }
             </div>
 }
-            </>
-}{isMobile && 
+            </div>
+        }
+        
+
+{isMobile && 
+<div className={styles.mobileMain}>
         <div id="container" className={styles.mobileContainer}>
                 <h1 className={styles.header}>Our Electric Collection</h1>
             <div  className={styles.previewContainer}>
@@ -84,30 +90,31 @@ export default function Cars() {
             </div>
             </div>
             { car === "ix" &&
-                <div className={styles.imageContainer}>
+                <div style={{position: 'absolute', right: '70vw' ,top: '118vh' }} className={styles.imageContainer }>
                 <Image draggable="false" src='/../public/bmw-ix-big.jpg' alt="" width='1660' height='756'/>
                 </div>
             }
             {car === 'i7' &&
-            <div className={styles.imageContainer}>
+            <div style={{position: 'absolute', left: '60vw', top: '118vh'}} className={styles.imageContainer}>
                 <Image draggable="false" src="/../public/bmw-i7-big.jpg" alt="" width='1660' height ="756" />
             </div>
 
             } {car === 'i4' &&
-            <div className={styles.imageContainer}>
+            <div  className={styles.imageContainer}>
                 <Image draggable="false" src="/../public/bmw-i4-big.jpg" alt="" width='1660' height ="756" />
             </div>
 
             }
              {car === 'ix1' &&
-            <div className={styles.imageContainer}>
+            <div style={{position: 'absolute', top: '118vh'}} className={styles.imageContainer}>
                 <Image draggable="false" src="/../public/bmw-ix1-big.jpg" alt="" width='1660' height ="756" />
             </div>
 
             }
             </div>
+            </div>
 }
-            
-        </div>
+
+        </>
     )
 }
