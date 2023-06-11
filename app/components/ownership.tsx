@@ -9,7 +9,7 @@ export default function Ownership() {
             <div className={styles.preview}>
                 <Image src='/../public/tradeIn.png' width='76' height='76' alt=""/>
                 <h2>Trade-In Value</h2>
-                <p className={styles.paragraph}>Get The latest information on your vehicle's trade-in value today.</p>
+                <p className={styles.paragraph}>Get The latest information on your vehicle&ap   os;s trade-in value today.</p>
                 <p className={styles.link}> Visit Black Book &#8599;</p>
             </div>
             <div className={styles.preview}>
