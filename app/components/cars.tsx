@@ -30,40 +30,40 @@ export default function Cars() {
             <div className={styles.previewContainer}>
             <div onClick={() => setCar("ix")} className={styles.carContainer}>
             <p className={styles.carModel}>BNW IX</p>
-            <Image draggable="false" alt="" src="/../public/bmw-ix-small.png" width='200'  height='150'/>
+            <Image draggable="false" alt="" src="/bmw-ix-small.png" width='200'  height='150'/>
             </div>
              <div onClick={() => setCar("i7")} className={styles.carContainer}>
             <p className={styles.carModel}>BNW I7</p>
-            <Image draggable="false" alt="" src="/../public/bmw-i7-small.png" width='200'  height='150'/>
+            <Image draggable="false" alt="" src="/bmw-i7-small.png" width='200'  height='150'/>
             </div>
              <div onClick={() => setCar("i4")} className={styles.carContainer}>
             <p className={styles.carModel}>BNW I4</p>
-            <Image draggable="false" alt="" src="/../public/bmw-i4-small.png" width='200'  height='150'/>
+            <Image draggable="false" alt="" src="/bmw-i4-small.png" width='200'  height='150'/>
             </div>
              <div onClick={() => setCar("ix1")} className={styles.carContainer}>
             <p className={styles.carModel}>BNW IX1</p>
-            <Image draggable="false" alt="" src="/../public/bmw-ix1-small.png" width='200'  height='150'/>
+            <Image draggable="false" alt="" src="/bmw-ix1-small.png" width='200'  height='150'/>
             </div>
             </div>
             { car === "ix" &&
                 <div className={styles.imageContainer}>
-                <Image draggable="false" src='/../public/bmw-ix-big.jpg' alt="" width={window.innerWidth} height={window.innerHeight}/>
+                <Image draggable="false" src='/bmw-ix-big.jpg' alt="" width={window.innerWidth} height={window.innerHeight}/>
                 </div>
             }
             {car === 'i7' &&
             <div className={styles.imageContainer}>
-                <Image draggable="false" src="/../public/bmw-i7-big.jpg" alt="" width={window.innerWidth} height ={window.innerHeight} />
+                <Image draggable="false" src="/bmw-i7-big.jpg" alt="" width={window.innerWidth} height ={window.innerHeight} />
             </div>
 
             } {car === 'i4' &&
             <div className={styles.imageContainer}>
-                <Image draggable="false" src="/../public/bmw-i4-big.jpg" alt="" width={window.innerWidth} height ={window.innerHeight} />
+                <Image draggable="false" src="/bmw-i4-big.jpg" alt="" width={window.innerWidth} height ={window.innerHeight} />
             </div>
 
             }
              {car === 'ix1' &&
             <div className={styles.imageContainer}>
-                <Image draggable="false" src="/../public/bmw-ix1-big.jpg" alt="" width={window.innerWidth} height ={window.innerHeight} />
+                <Image draggable="false" src="/bmw-ix1-big.jpg" alt="" width={window.innerWidth} height ={window.innerHeight} />
             </div>
 
             }
