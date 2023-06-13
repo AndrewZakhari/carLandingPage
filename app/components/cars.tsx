@@ -14,7 +14,7 @@ export default function Cars() {
     useEffect( () => {
        const isMobile = window.innerWidth < 850
        setIsMobile(isMobile)
-    }) 
+    }, []) 
     const [car, setCar] = useState<string>("ix")
     const [isMobile, setIsMobile]  = useState<boolean>(false)
     const [render, setRender] = useState<boolean>(false)

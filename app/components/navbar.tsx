@@ -19,7 +19,7 @@ export default function Nav() {
     useEffect(() => {
         const isMobile = window.innerWidth < 850;
         setIsMobile(isMobile)
-    })
+    },[])
     const [updateNav, setUpdateNav] = useState<boolean>(false);
     const [search , setSearch] = useState<boolean>(false);
     const [open, setOpen] = useState<boolean>(false);
