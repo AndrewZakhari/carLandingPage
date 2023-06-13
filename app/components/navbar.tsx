@@ -31,33 +31,33 @@ export default function Nav() {
         <>
         {updateNav &&
              <div id="navbar" className={styles.NavmainWhite}>
-           <Link scroll={false} href="/"><Image alt="" className={styles.logo} src="/../public/bmw1.png" width="50" height="50"/></Link>
+           <Link scroll={false} href="/"><Image alt="" className={styles.logo} src="/bmw1.png" width="50" height="50"/></Link>
             <p className={styles.text}>Models</p>
             <p className={styles.text}>Build Your Own</p>
             <p className={styles.text}>Shopping &darr;</p>
             <p className={styles.text}>BMW Electric</p>
             <p className={styles.text}>Owners &darr;</p>
-            <Image alt="" onClick={ () => setSearch(!search)} className={styles.searchIcon} src='/../public/search1.png' width="30" height="30" />
+            <Image alt="" onClick={ () => setSearch(!search)} className={styles.searchIcon} src='/search1.png' width="30" height="30" />
             {search &&
                 <div className={styles.searchBox}><input style={{border: "none"}} placeholder='Search' type='text' /> 
-                <Image className={styles.secSearchIcon} alt="" src='/../public/search1.png' width="15" height="15" />
+                <Image className={styles.secSearchIcon} alt="" src='/search1.png' width="15" height="15" />
                     </div>
             }
         </div>
         }
         { !updateNav &&
         <div id="navbar" className={styles.Navmain}>
-           <Link scroll={false} href="/"><Image alt="" className={styles.logo} src="/../public/bmw1.png" width="50" height="50"/></Link>
+           <Link scroll={false} href="/"><Image alt="" className={styles.logo} src="/bmw1.png" width="50" height="50"/></Link>
             <p className={styles.text}>Models</p>
             <p className={styles.text}>Build Your Own</p>
             <p className={styles.text}>Shopping &darr;</p>
             <p className={styles.text}>BMW Electric</p>
             <p className={styles.text}>Owners &darr;</p>
-            <Image alt="" onClick={ () => setSearch(!search)} className={styles.searchIcon} src='/../public/search1.png' width="30" height="30" />
+            <Image alt="" onClick={ () => setSearch(!search)} className={styles.searchIcon} src='/search1.png' width="30" height="30" />
             {search &&
                 <div className={styles.searchBox}>
                     <input style={{border: "none"}} placeholder='Search' type='text' /> 
-                <Image className={styles.secSearchIcon} alt="" src='/../public/search1.png' width="15" height="15" />
+                <Image className={styles.secSearchIcon} alt="" src='/search1.png' width="15" height="15" />
                     </div>
             }
         </div>
@@ -67,19 +67,19 @@ export default function Nav() {
         <>
         { !open &&
         <div className={styles.closedNavMobile}>
-            <Image onClick={() => setOpen(true)} className={styles.closeLogo} alt="" src="/../public/bmw1.png"  width="50" height="50"/>
-            <Image onClick={() => setSearch(!search)} alt="" src="/../public/search1.png" className={styles.searchIcon} width="30" height="30" />
+            <Image onClick={() => setOpen(true)} className={styles.closeLogo} alt="" src="/bmw1.png"  width="50" height="50"/>
+            <Image onClick={() => setSearch(!search)} alt="" src="/search1.png" className={styles.searchIcon} width="30" height="30" />
             { search &&
                 <div className={styles.searchBox}>                
                     <input style={{border: 'none'}} placeholder='Search' type='text'/>
-                    <Image className={styles.secSearchIcon} alt="" src="/../public/search1.png" width="15" height="15" />
+                    <Image className={styles.secSearchIcon} alt="" src="/search1.png" width="15" height="15" />
                 </div>
             }
         </div>
 }{open &&
     <div className={styles.openedNavMobile}>
-        <Image onClick={() => setOpen(false)} className={styles.openLogo} alt="" src="/../public/bmw1.png"  width="50" height="50"/>
-            <Image onClick={() => setSearch(!search)} alt="" src="/../public/search1.png" className={styles.searchIcon} width="30" height="30" />
+        <Image onClick={() => setOpen(false)} className={styles.openLogo} alt="" src="/bmw1.png"  width="50" height="50"/>
+            <Image onClick={() => setSearch(!search)} alt="" src="/search1.png" className={styles.searchIcon} width="30" height="30" />
             <div className={styles.container}>
              <p className={styles.textMob}>Models</p>
             <p className={styles.textMob}>Build Your Own</p>
@@ -90,7 +90,7 @@ export default function Nav() {
             { search &&
                 <div className={styles.searchBox}>                
                     <input style={{border: 'none'}} placeholder='Search' type='text'/>
-                    <Image className={styles.secSearchIcon} alt="" src="/../public/search1.png" width="15" height="15" />
+                    <Image className={styles.secSearchIcon} alt="" src="/search1.png" width="15" height="15" />
                 </div>
             }
     </div>
